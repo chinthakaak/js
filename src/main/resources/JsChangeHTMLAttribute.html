@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Title</title>
+</head>
+<body>
+    <img id="image12" onclick="changeImage()" src="1.jpeg">
+
+<script>
+    function changeImage() {
+        var image = document.getElementById("image12");
+        if (image.src.match("1.jpeg")) {
+            image.src = "2.jpeg";
+        } else {
+            image.src = "1.jpeg";
+        }
+    }
+</script>
+</body>
+</html>
